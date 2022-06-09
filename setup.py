@@ -1,10 +1,18 @@
 from setuptools import setup
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='BrainflowCyton',
     version='0.1.0',    
     description='Python wrapper for BrainFlow API + Cyton SDK for collecting realtime or offline (SDCard) EEG, EMG, EKG data.',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url='https://github.com/zeyus/BrainflowCytonEEGWrapper',
+    project_urls={
+        'Bug Tracker': 'https://github.com/zeyus/BrainflowCytonEEGWrapper/issues',
+    },
     author='zeyus',
     author_email='dev@zeyus.com',
     license='MIT',

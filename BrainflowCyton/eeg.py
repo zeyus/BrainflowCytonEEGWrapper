@@ -13,8 +13,6 @@ import pandas as pd
 import logging
 
 class CytonSampleRate(Enum):
-  SR_100 = '100'
-  SR_125 = '125'
   SR_250 = 6
   SR_500 = 5
   SR_1000 = 4
